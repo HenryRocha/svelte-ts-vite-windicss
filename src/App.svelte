@@ -29,7 +29,9 @@
                 <h4 class="text-blue-400">WindiCSS</h4>
             </div>
             <h3>=</h3>
-            <h3 class="text-gradient bg-gradient-to-r from-orange-600 via-purple-600 to-blue-400">Awesome!</h3>
+            <h3 class="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-purple-600 to-blue-400">
+                Awesome!
+            </h3>
         </div>
 
         <div class="row-span-4">
@@ -39,13 +41,6 @@
 </main>
 
 <style lang="postcss">
-    @layer utilities {
-        .text-gradient {
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-
     img {
         @apply w-32 h-32;
     }
