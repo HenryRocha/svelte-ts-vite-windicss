@@ -3,7 +3,9 @@
     import typescriptLogo from "./assets/typescript.svg";
     import viteLogo from "./assets/vite.svg";
     import windiLogo from "./assets/windi.svg";
-    import Counter from "./components/Counter";
+    import Button from "./components/Button";
+
+    let count: number = 0;
 </script>
 
 <main>
@@ -35,7 +37,9 @@
         </div>
 
         <div class="row-span-4">
-            <Counter />
+            <Button on:click="{() => count++}" kind="primary" rounded="lg" sizex="xl" sizey="xl">
+                Clicks: {count}
+            </Button>
         </div>
     </div>
 </main>
